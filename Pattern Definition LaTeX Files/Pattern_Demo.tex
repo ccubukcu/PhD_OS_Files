@@ -1,0 +1,150 @@
+\documentclass[]{SMARTlab_PhD}
+\usepackage{Gamification_Pattern}
+\usepackage{setspace}
+\usepackage{pdfpages}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+%++++++++++++++++++++++++++++++++++++++++++%
+%++++++++++++++++++++++++++++++++++++++++++%
+%          Start of Introduction           %
+%++++++++++++++++++++++++++++++++++++++++++%
+%++++++++++++++++++++++++++++++++++++++++++%
+
+\chapter{Introduction}
+
+This gamification pattern definition table was developed as part of a PhD research. The title page of the PhD in question can be found on the next page.
+
+The Gamification\_Pattern.sty file can be used in any LaTeX project that needs this structure. Most of the styling options can be found in the SMARTlab\_PhD.cls file.
+
+An example usage of the newly defined "\\pattern" environment can be found in this document, after the title page. The example pattern definition uses Lorem Ipsum texts generated via https://www.lipsum.com/.
+
+The environment and options used to compile and render this project to achieve the same look are:
+
+\begin{itemize}
+    \item IDE: Overleaf
+    \item Compiler: pdfLaTeX
+    \item TeX Live version: 2016 (Overleaf v1) (Legacy)
+    \item Line Height: Normal
+\end{itemize}
+
+%------------------------------------------%
+%------------------------------------------%
+%           End of Introduction            %
+%------------------------------------------%
+%------------------------------------------%
+
+% The title page
+\includepdf[scale=1]{Title_Page.pdf}
+
+
+%++++++++++++++++++++++++++++++++++++++++++%
+%++++++++++++++++++++++++++++++++++++++++++%
+%        Start of Example Pattern          %
+%++++++++++++++++++++++++++++++++++++++++++%
+%++++++++++++++++++++++++++++++++++++++++++%
+\begin{spacing}{1.5}
+\renewcommand{\arraystretch}{1.5}
+
+\chapter{Lorem Ipsum Patterns}
+\section{Lorem Ipsum}
+
+
+\begin{pattern}
+    \Name{Lorem Ipsum}
+    
+    \Classification{Lorem}
+    
+    \Purpose{Ipsum}
+    
+    \Intent{
+        Vivamus placerat tempus malesuada. Donec cursus elit quis mauris tempus viverra. In vitae quam et.
+    }
+    
+    \AKA{
+        Cras, Placerat, Suscipit
+    }
+    
+    \Motivation{
+        Nunc sollicitudin orci sed nunc feugiat, non ullamcorper nisi fringilla. Morbi malesuada sed lorem a pretium. Cras commodo urna nibh, a porta enim mollis non. Quisque accumsan sollicitudin enim at fermentum. Vestibulum quis elit vitae ante bibendum pharetra. Nunc consectetur magna rutrum turpis fringilla finibus. Nunc sit amet libero vel neque sollicitudin scelerisque in in purus. Suspendisse pretium arcu vel mi lacinia finibus. Integer et risus maximus ipsum blandit lobortis.\vspace{\tableParSkip}
+
+        Vestibulum sit amet nibh magna. Sed at lorem lacinia, porta mi vel, vulputate elit. Nullam egestas massa in gravida blandit. Integer eu ipsum purus. Vivamus a erat ultricies, porta diam vel, gravida tellus. Ut auctor vel nulla et.
+    }
+    
+    \Applicability{
+        Donec mattis erat augue, vel tincidunt nulla posuere:
+        \begin{participantlist}
+            \item Aenean ultricies, ipsum lobortis interdum fermentum, felis diam tempor purus, at viverra diam tellus egestas.
+            \item Ut pretium nibh quis felis placerat, interdum sagittis.
+            
+        \end{participantlist}
+        
+        Aenean ornare posuere dui eget mollis. Ut et:
+        \begin{participantlist}
+            \item Sed auctor odio augue, hendrerit dapibus nulla ultricies.
+            \item Sed ornare a ex ut ultricies. Vivamus eu.
+            \item Proin a cursus nunc. Sed faucibus non neque.
+            \item Etiam dui lectus, feugiat sit amet dui vel.
+        \end{participantlist}
+    }
+    
+    \Structure{
+        \includegraphics[width=0.2\textwidth]{placeholder_200.png}
+    }
+    
+    \Participants{
+        \begin{participantlist}
+            \item \textbf{Lorem ipsum}  dolor sit amet, consectetur adipiscing elit. Curabitur at metus non turpis venenatis mattis quis eu libero. Nam ultrices laoreet consectetur. Nulla sem turpis, bibendum feugiat odio a, efficitur auctor eros. Vestibulum mi ante, condimentum gravida sollicitudin sed, dictum sed ex. Nam velit libero, tincidunt vel congue ut, dictum sed lectus. Pellentesque sed quam viverra, convallis sapien at, tincidunt mauris. Ut pulvinar felis vestibulum justo facilisis feugiat. Aenean porttitor arcu eu mattis vehicula. Nulla auctor nibh sed turpis suscipit, vitae eleifend orci rutrum. Nam rutrum vulputate tellus quis scelerisque. Proin vel ipsum eget nunc tincidunt sollicitudin id nec urna. Nam velit massa, egestas in dui et, aliquam finibus augue. Proin sed felis metus.
+            
+            \item Lorem ipsum \textbf{dolor sit amet}, consectetur adipiscing elit. Aenean ullamcorper ut orci at luctus. Phasellus a enim ultricies, elementum sem vel, iaculis odio. Nam semper metus ac facilisis feugiat. Quisque a facilisis lectus. Donec pulvinar molestie augue. Suspendisse posuere pulvinar urna sed aliquet. Sed interdum, ligula at faucibus interdum, erat leo dictum nulla, tincidunt sodales lectus ex vel ante. Donec enim lectus, luctus vel sem nec, condimentum rhoncus dolor. Morbi sollicitudin lorem ac dolor maximus porttitor. Aliquam eget blandit diam.
+        \end{participantlist}
+    }
+    
+    \Collaborations{
+        \begin{participantlist}
+            \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec consectetur velit. Vestibulum sit amet augue commodo, venenatis quam vitae, facilisis ipsum. Lorem ipsum dolor.
+            
+            \item Sed ultricies, libero eu viverra vulputate, quam purus suscipit sem, in pharetra dolor ligula sed quam. Aenean fringilla suscipit ipsum sed ultricies. Maecenas commodo nisi.
+            
+            \item Cras a nisi nec quam fringilla pharetra. Nullam arcu dolor, pretium et viverra ut, vulputate eget dui. Donec vel leo posuere, finibus dolor porta, sodales. Vestibulum faucibus, augue at finibus cursus, urna ex fermentum tortor, sed fermentum neque felis eget quam. Morbi sodales tincidunt odio nec tincidunt. Ut lacus lacus.
+        \end{participantlist}
+    }
+    
+    \Consequences{
+        Manifest: Phasellus euismod massa eu tellus aliquam, at ullamcorper diam pulvinar. Sed cursus posuere metus, id mollis neque vulputate ut. Praesent mollis ullamcorper leo at sagittis. Quisque tincidunt urna rhoncus tristique efficitur. Donec laoreet eget elit venenatis ultricies. Aenean semper orci nulla, a eleifend nisi tempor a. Integer sem diam, gravida.
+    
+        Latent: Aenean in metus malesuada, accumsan ipsum non, mattis justo. Duis id ipsum sed massa tristique imperdiet. Integer ornare egestas orci, vitae cursus tellus dictum ut. Maecenas auctor fringilla ante, sit amet maximus turpis. Donec eu feugiat arcu. Phasellus sollicitudin orci consectetur nisi gravida fermentum. Nulla a viverra nisi. Sed fermentum.
+    }
+    
+    
+
+    \KnownUses{
+        Praesent suscipit consequat velit, ut pretium lectus lobortis nec. Sed nibh lacus:
+        \begin{itemize}
+            \item Donec aliquet consectetur arcu, id cursus dui egestas maximus. Quisque nec purus.
+            \item Vestibulum iaculis eu quam quis ultrices. Sed sodales nisl vitae lectus volutpat, eget ultricies tortor egestas. Integer pellentesque accumsan libero, ac vulputate est. Nullam efficitur aliquam nibh, et bibendum mauris convallis at. Aliquam a.
+            \item Fusce a ante sagittis odio convallis pretium. Fusce fringilla interdum sem. Proin laoreet nunc non ornare finibus. Vivamus at quam nisi. Sed a sem euismod augue fringilla maximus. Pellentesque blandit eros et urna ornare, sed venenatis mauris fermentum. Nam congue accumsan magna. Nullam enim velit, suscipit eget volutpat.
+            \item Aliquam lobortis at est et aliquet. Quisque magna nisi, tristique sit amet ullamcorper sed, sagittis sed risus. Proin.
+        \end{itemize}
+    }
+    
+    \RelatedPatterns{
+        Sed pharetra, erat eget facilisis maximus, nisl metus scelerisque dolor, in pellentesque diam purus vitae mi. Mauris id quam aliquet, pharetra.
+        
+        Cras sit amet fermentum libero, sit amet ultricies ex. Duis vitae neque felis. Sed vel consequat metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam tristique congue ligula, eget dignissim erat semper ullamcorper.
+        
+        Nam posuere nisl non augue facilisis, eget mollis ex consectetur. Vivamus quis neque id orci bibendum congue sit amet non ipsum. Maecenas suscipit vestibulum purus. Nullam id orci risus. Phasellus eu nulla rhoncus, varius velit quis, luctus mi. Quisque ut condimentum urna. Etiam convallis volutpat consequat. Nullam ut turpis nec sem pulvinar malesuada. Duis volutpat urna nec imperdiet volutpat. Integer tempus in ipsum ut semper. Vivamus tempor at ligula et bibendum. Phasellus laoreet elementum dui, ac vestibulum lectus malesuada eu. Fusce tortor nulla, suscipit non condimentum sed, ornare nec quam. Duis vitae vehicula urna. Cras laoreet mauris eget sagittis scelerisque. Sed dapibus aliquet odio id consectetur. Phasellus a pellentesque risus, sed tincidunt lorem. Duis.
+    }
+\end{pattern}
+
+%------------------------------------------%
+%------------------------------------------%
+%         End of Example Pattern           %
+%------------------------------------------%
+%------------------------------------------%
+
+\end{spacing}
+\end{document}
+
+\end{article}

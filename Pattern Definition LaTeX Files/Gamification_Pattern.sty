@@ -1,0 +1,134 @@
+\ProvidesPackage{Gamification_Pattern}
+
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{makecell}
+
+% Define styling variables
+\newcommand{\tableParSkip}{12pt}
+\newcommand{\prePatternCommand}{\newpage}
+\newcommand{\ptTableSpacing}{1.2}
+\newcommand{\firstCol}{\dimexpr0.25\textwidth-2\tabcolsep\relax}
+\newcommand{\secondCol}{\dimexpr0.75\textwidth-2\tabcolsep\relax}
+
+% Define variables for use within the pattern environment
+\newcommand{\givenName}{N}
+\newcommand{\Name}[1]{\renewcommand{\givenName}{#1}}
+\newcommand{\Classification}[1]{\renewcommand{\givenClassification}{#1}}
+\newcommand{\givenClassification}{C}
+\newcommand{\Purpose}[1]{\renewcommand{\givenPurpose}{#1}}
+\newcommand{\givenPurpose}{P}
+\newcommand{\Intent}[1]{\renewcommand{\givenIntent}{#1}}
+\newcommand{\givenIntent}{I}
+\newcommand{\AKA}[1]{\renewcommand{\givenAKA}{#1}}
+\newcommand{\givenAKA}{AKA}
+\newcommand{\Motivation}[1]{\renewcommand{\givenMotivation}{#1}}
+\newcommand{\givenMotivation}{M}
+\newcommand{\Structure}[1]{\renewcommand{\givenStructure}{#1}}
+\newcommand{\givenStructure}{S}
+\newcommand{\Participants}[1]{\renewcommand{\givenParticipants}{#1}}
+\newcommand{\givenParticipants}{PA}
+\newcommand{\Collaborations}[1]{\renewcommand{\givenCollaborations}{#1}}
+\newcommand{\givenCollaborations}{CO}
+\newcommand{\Consequences}[1]{\renewcommand{\givenConsequences}{#1}}
+\newcommand{\givenConsequences}{OC}
+\newcommand{\Applicability}[1]{\renewcommand{\givenApplicability}{#1}}
+\newcommand{\givenApplicability}{AD}
+\newcommand{\KnownUses}[1]{\renewcommand{\givenKnownUses}{#1}}
+\newcommand{\givenKnownUses}{KU}
+\newcommand{\RelatedPatterns}[1]{\renewcommand{\givenRelatedPatterns}{#1}}
+\newcommand{\givenRelatedPatterns}{RP}
+
+
+% Define the pattern environment
+\newenvironment{pattern}[0]
+    {
+    % There is probably a better solution than leaving this part blank.
+    
+    }
+    { 
+    
+    \begin{longtable}{p{\firstCol}p{\secondCol}}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \textbf{Pattern Name} &
+    \givenName        \\
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \endfirsthead
+    %
+    \endhead
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \textbf{Classification} &
+    \givenClassification\\
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \textbf{Purpose} &
+    \givenPurpose\\
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \textbf{Intent} &
+    \givenIntent\\
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \textbf{Also Known As} &
+    \givenAKA\\
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \textbf{Motivation} &
+    \givenMotivation\\
+    
+    
+    \end{longtable}
+    
+    %\vspace{-8mm}
+    
+    
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \textbf{Applicability and Dysfunction}\vspace{\tableParSkip}\\
+        \givenApplicability 
+        
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \textbf{Structure}
+        \begin{center}
+            \givenStructure    
+        \end{center}
+        
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \textbf{Participants}\vspace{\tableParSkip}
+        \givenParticipants
+        
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \textbf{Collaborations}\vspace{\tableParSkip}
+        \givenCollaborations
+        
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \textbf{Objective Consequences}\vspace{\tableParSkip}\\
+        \givenConsequences
+    
+        
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \textbf{Known Uses}\vspace{\tableParSkip}\\
+        \givenKnownUses 
+        
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \textbf{Related Patterns}\vspace{\tableParSkip}\\
+        \givenRelatedPatterns
+    }
+    
+% The styling used for sections except for Known Uses has a different styling, which is provided by this environment.
+\newenvironment{participantlist}[0]
+    {
+        \vspace{-4mm}
+        \begin{itemize}[topsep=0pt,itemsep=0.5pt,parsep=0pt,partopsep=0pt]
+            \renewcommand\labelitemi{$\circ$}
+            
+    }
+    {
+        \end{itemize}
+    }
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
